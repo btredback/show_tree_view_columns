@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<templates t-name="dynamic_columns">
+   <t t-extend="ListView.buttons">
+
+   <t t-jquery="div.o_list_buttons" t-operation="prepend" >
+
+      <button name="select_columns" type="button" id="select_columns" class="btn btn-primary btn-sm oe_select_columns oe_button oe_dropdown_toggle" data-toggle="dropdown">
+            select columns <span class="create" style = "margin:3px"></span>
+      </button>
+
+      <ul id="showcb" class="oe_dropdown_menu" style="max-height:250px; overflow:auto;z-index:1000;">
+          <li>
+              <button name="apply" id="apply" class="oe_dropdown_btn">apply</button>
+              <button name="save" id="save" class="oe_stat_button">save</button>
+          </li>
+          <li>
+              <input id="getAll" type="checkbox">select all</input>
+          </li>
+      </ul>
+    </t>
+</t>
+</templates>

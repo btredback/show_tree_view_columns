@@ -1,0 +1,59 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+    <!--
+    <record model="ir.ui.view" id="show_tree_view_columns.list">
+      <field name="name">show_tree_view_columns list</field>
+      <field name="model">show_tree_view_columns.show_tree_view_columns</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="value"/>
+          <field name="value2"/>
+        </tree>
+      </field>
+    </record>
+    -->
+
+    <!-- actions opening views on models -->
+    <!--
+    <record model="ir.actions.act_window" id="show_tree_view_columns.action_window">
+      <field name="name">show_tree_view_columns window</field>
+      <field name="res_model">show_tree_view_columns.show_tree_view_columns</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+    -->
+
+    <!-- server action to the one above -->
+    <!--
+    <record model="ir.actions.server" id="show_tree_view_columns.action_server">
+      <field name="name">show_tree_view_columns server</field>
+      <field name="model_id" ref="model_show_tree_view_columns_show_tree_view_columns"/>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": self._name,
+        }
+      </field>
+    </record>
+    -->
+
+    <!-- Top menu item -->
+    <!--
+    <menuitem name="show_tree_view_columns" id="show_tree_view_columns.menu_root"/>
+    -->
+    <!-- menu categories -->
+    <!--
+    <menuitem name="Menu 1" id="show_tree_view_columns.menu_1" parent="show_tree_view_columns.menu_root"/>
+    <menuitem name="Menu 2" id="show_tree_view_columns.menu_2" parent="show_tree_view_columns.menu_root"/>
+    -->
+    <!-- actions -->
+    <!--
+    <menuitem name="List" id="show_tree_view_columns.menu_1_list" parent="show_tree_view_columns.menu_1"
+              action="show_tree_view_columns.action_window"/>
+    <menuitem name="Server to list" id="show_tree_view_columns" parent="show_tree_view_columns.menu_2"
+              action="show_tree_view_columns.action_server"/>
+    -->
+  </data>
+</odoo>
