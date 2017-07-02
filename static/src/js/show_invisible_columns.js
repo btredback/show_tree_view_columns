@@ -53,20 +53,21 @@ ListView.include({
                     var li= document.createElement("li");
                     var description = document.createTextNode(column.string);
                     var checkbox = document.createElement("input");
+                    var span = document.createElement("span");
+                    var label = document.createElement("label");
+                    label.className = "o_switch";
                     checkbox.id = column.id;
                     checkbox.type = "checkbox";
                     checkbox.name = "cb";
                     if(column.invisible !== '1')
                     {
-                     checkbox.checked = true;
+                        checkbox.checked = true;
                     }
-                    /*if(column.string != "state"){
-                        li.appendChild(checkbox);
-                        li.appendChild(description);
-                        getcb.appendChild(li);
-                    }*/
-                    li.appendChild(checkbox);
-                    li.appendChild(description);
+
+                    li.appendChild(label);
+                    label.appendChild(checkbox);
+                    label.appendChild(span);
+                    label.appendChild(description);
                     getcb.appendChild(li);
                     $("#" + column.id).click(function () {
                         //alert("test" + column.id + column.invisible)

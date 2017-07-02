@@ -14,7 +14,11 @@
               <button name="save" id="save" class="oe_stat_button">save</button>
           </li>
           <li>
-              <input id="getAll" type="checkbox">select all</input>
+              <label class="o_switch">
+                  <input id="getAll" type="checkbox"></input>
+                  <span/>
+                  select all
+              </label>
           </li>
       </ul>
     </t>
